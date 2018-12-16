@@ -110,7 +110,7 @@
             if (ua.match(/MicroMessenger/i) == 'micromessenger' && isiOS) {   
                 $(".share-llq").show();
             } else {     
-                window.location.href = appurl;
+                window.location.href = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/oszone/out/master/mp/app/manifest.plist";
             }
         })
         
