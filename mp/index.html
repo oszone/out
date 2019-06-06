@@ -9,124 +9,125 @@
 </body>
 </html>
 
-
-<!DOCTYPE html>
-<!-- saved from url=(0042)http://h5.mipanapp.com/mipan/download.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>下载</title>
-    
-    <meta name="Keywords" content="">
-    <meta name="Description" content="">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./下载_files/reset.css">
-    <link rel="stylesheet" href="./下载_files/layer.css">
-    <style type="text/css">
-        .tab img{
-            width:100%;
-        }
-        .tab{
-            position:relative;
-        }
-        .tab a{
-            display:inline-block;
-            width:191px;
-            height:46px;
-            background:url("./下载_files/tap.jpg") no-repeat;
-            background-size:100% 100%;
-            position: absolute;
-            bottom: 35px;
-            left:50%;
-            margin-left:-96px;
-        }
-        .tap{
-            text-align:center;
-        }
-        .title-h1{
-            font-size:24px;
-            font-family:PingFangSC-Medium;
-            font-weight:500;
-            color:rgba(88,88,88,1);
-            margin-top:28px;
-            padding-bottom:15px;
-        }
-        .title-h2{
-            font-size:18px;
-            font-family:PingFangSC-Medium;
-            font-weight:250;
-            color:rgba(88,88,88,1);
-            margin-bottom:15px;
-        }
-        .tap img{
-            width:90%;
-            margin-bottom:35px;
-        }
-        .title-h3{
-            font-size:18px;
-            font-family:PingFangSC-Medium;
-            font-weight:250;
-            color:rgba(158,158,158,1);
-            margin-bottom:8px;
-        }
-        .setmargin{
-            margin-bottom:8px;
-        }
-        .share-llq{
-            position:fixed;
-            top:0;
-            right:25px;
-            display:none;
-        }
-        .share-llq img{
-            width:202px;
-            height:52px;
-        }
-    </style>
-</head>
-<body>
-    <div class="tab">
-        <img src="./下载_files/download-1.png">
-        <a href="javascript:;"></a>
-    </div>
-    <div class="tap">
-        <p class="title-h1">安装步骤</p>
-        <p class="title-h2">第一步：下载App</p>
-        <img src="./下载_files/download-2.png" title="" style="">
-        <p class="title-h2 setmargin">第二步：信任应用</p>
-        <p class="title-h3">设置-通用-设备管理，点击证书选择信任</p>
-        <img src="./下载_files/download-3.png">
-        <p class="title-h2">第三步：打开App</p>
-        <img src="./下载_files/download-4.png">
-    </div>
-    <div class="share-llq">
-        <img src="./下载_files/share-llq.png">
-    </div>
-
-<script type="text/javascript" src="./下载_files/jquery.min.js"></script>
-<script type="text/javascript" src="./下载_files/layer.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        var ua = window.navigator.userAgent.toLowerCase();
-        var isiOS = ua.indexOf('iphone') > -1;
-        var appurl = '';
-        $.ajax({
-            type: "GET",
-            url: "https://download.mkpym.com/api/app/iosmipan",
-            data:{},
-            dataType: "json",
-            success: function(data){
-                appurl=data.data.version.installUrl;
-            }
-        });
-        $(".tab a").on("click",function(){
-            if (ua.match(/MicroMessenger/i) == 'micromessenger' && isiOS) {   
-                $(".share-llq").show();
-            } else {     
-                window.location.href = "itms-services://?action=download-manifest&url=https://app-1251837863.cos.ap-guangzhou.myqcloud.com/manifest.plist";
-            }
-        })
-        
-
-    })
-</script>
-</body></html>
+<!---->
+<!---->
+<!--<!DOCTYPE html>-->
+<!--<!-- saved from url=(0042)http://h5.mipanapp.com/mipan/download.html -->-->
+<!--<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<!--    <title>下载</title>-->
+<!--    -->
+<!--    <meta name="Keywords" content="">-->
+<!--    <meta name="Description" content="">-->
+<!--    <meta name="format-detection" content="telephone=no">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+<!--    <link rel="stylesheet" type="text/css" href="./下载_files/reset.css">-->
+<!--    <link rel="stylesheet" href="./下载_files/layer.css">-->
+<!--    <style type="text/css">-->
+<!--        .tab img{-->
+<!--            width:100%;-->
+<!--        }-->
+<!--        .tab{-->
+<!--            position:relative;-->
+<!--        }-->
+<!--        .tab a{-->
+<!--            display:inline-block;-->
+<!--            width:191px;-->
+<!--            height:46px;-->
+<!--            background:url("./下载_files/tap.jpg") no-repeat;-->
+<!--            background-size:100% 100%;-->
+<!--            position: absolute;-->
+<!--            bottom: 35px;-->
+<!--            left:50%;-->
+<!--            margin-left:-96px;-->
+<!--        }-->
+<!--        .tap{-->
+<!--            text-align:center;-->
+<!--        }-->
+<!--        .title-h1{-->
+<!--            font-size:24px;-->
+<!--            font-family:PingFangSC-Medium;-->
+<!--            font-weight:500;-->
+<!--            color:rgba(88,88,88,1);-->
+<!--            margin-top:28px;-->
+<!--            padding-bottom:15px;-->
+<!--        }-->
+<!--        .title-h2{-->
+<!--            font-size:18px;-->
+<!--            font-family:PingFangSC-Medium;-->
+<!--            font-weight:250;-->
+<!--            color:rgba(88,88,88,1);-->
+<!--            margin-bottom:15px;-->
+<!--        }-->
+<!--        .tap img{-->
+<!--            width:90%;-->
+<!--            margin-bottom:35px;-->
+<!--        }-->
+<!--        .title-h3{-->
+<!--            font-size:18px;-->
+<!--            font-family:PingFangSC-Medium;-->
+<!--            font-weight:250;-->
+<!--            color:rgba(158,158,158,1);-->
+<!--            margin-bottom:8px;-->
+<!--        }-->
+<!--        .setmargin{-->
+<!--            margin-bottom:8px;-->
+<!--        }-->
+<!--        .share-llq{-->
+<!--            position:fixed;-->
+<!--            top:0;-->
+<!--            right:25px;-->
+<!--            display:none;-->
+<!--        }-->
+<!--        .share-llq img{-->
+<!--            width:202px;-->
+<!--            height:52px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="tab">-->
+<!--        <img src="./下载_files/download-1.png">-->
+<!--        <a href="javascript:;"></a>-->
+<!--    </div>-->
+<!--    <div class="tap">-->
+<!--        <p class="title-h1">安装步骤</p>-->
+<!--        <p class="title-h2">第一步：下载App</p>-->
+<!--        <img src="./下载_files/download-2.png" title="" style="">-->
+<!--        <p class="title-h2 setmargin">第二步：信任应用</p>-->
+<!--        <p class="title-h3">设置-通用-设备管理，点击证书选择信任</p>-->
+<!--        <img src="./下载_files/download-3.png">-->
+<!--        <p class="title-h2">第三步：打开App</p>-->
+<!--        <img src="./下载_files/download-4.png">-->
+<!--    </div>-->
+<!--    <div class="share-llq">-->
+<!--        <img src="./下载_files/share-llq.png">-->
+<!--    </div>-->
+<!---->
+<!--<script type="text/javascript" src="./下载_files/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="./下载_files/layer.min.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    $(function(){-->
+<!--        var ua = window.navigator.userAgent.toLowerCase();-->
+<!--        var isiOS = ua.indexOf('iphone') > -1;-->
+<!--        var appurl = '';-->
+<!--        $.ajax({-->
+<!--            type: "GET",-->
+<!--            url: "https://download.mkpym.com/api/app/iosmipan",-->
+<!--            data:{},-->
+<!--            dataType: "json",-->
+<!--            success: function(data){-->
+<!--                appurl=data.data.version.installUrl;-->
+<!--            }-->
+<!--        });-->
+<!--        $(".tab a").on("click",function(){-->
+<!--            if (ua.match(/MicroMessenger/i) == 'micromessenger' && isiOS) {   -->
+<!--                $(".share-llq").show();-->
+<!--            } else {     -->
+<!--                window.location.href = "itms-services://?action=download-manifest&url=https://app-1251837863.cos.ap-guangzhou.myqcloud.com/manifest.plist";-->
+<!--            }-->
+<!--        })-->
+<!--        -->
+<!---->
+<!--    })-->
+<!--</script>-->
+<!--</body></html>-->
